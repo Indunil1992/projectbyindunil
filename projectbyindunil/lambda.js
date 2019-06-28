@@ -9,7 +9,7 @@ exports.handler = function (event, context, callback) {
     }).promise()
         .then(data => {
             console.log(data);  
-            callback(null, "Successfully executed to enduser data" + {data});         // successful response
+            callback(null, "Successfully executed to enduser headdata" + {data});         // successful response
             /*
             data = {
                 AcceptRanges: "bytes", 
@@ -25,7 +25,7 @@ exports.handler = function (event, context, callback) {
         })
         .catch(err => {
             console.log(err, err.stack); 
-            callback(null, "Successfully executed to enduser catch" + {err}); // an error occurred
+            callback(null, "Successfully executed to enduser catchead" + {err}); // an error occurred
         });
 
 
