@@ -1,0 +1,102 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "45b6c2db-0e44-4d39-b5b1-7b585bea66db": {
+        "id": "45b6c2db-0e44-4d39-b5b1-7b585bea66db",
+        "parent": null,
+        "name": "projectbyindunil",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "e1440183-a4a7-49f7-b3c3-a46491f9f848"
+        ],
+        "isRemovable": false,
+        "filePath": "projectbyindunil"
+      },
+      "e1440183-a4a7-49f7-b3c3-a46491f9f848": {
+        "id": "e1440183-a4a7-49f7-b3c3-a46491f9f848",
+        "parent": "45b6c2db-0e44-4d39-b5b1-7b585bea66db",
+        "name": "lambda.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "projectbyindunil/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n\n    \n\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "triggers": [
+          {
+            "resourceName": "apigusEast1californiaindunilqatstget",
+            "config": {}
+          }
+        ],
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        }
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "45b6c2db-0e44-4d39-b5b1-7b585bea66db",
+    "openFiles": [
+      "e1440183-a4a7-49f7-b3c3-a46491f9f848"
+    ],
+    "currentFileId": "e1440183-a4a7-49f7-b3c3-a46491f9f848",
+    "resources": {
+      "apigusEast1californiaindunilqatstget": {
+        "name": "apigusEast1californiaindunilqatstget",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 0,
+          "apiName": "california",
+          "endpointType": "REGIONAL",
+          "resourceMode": 0,
+          "resourceName": "indunil/qa/tst",
+          "resourcePath": "/indunil/qa/tst",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "prod"
+        },
+        "globallyEditable": false
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "projectbyindunil",
+    "projectDescription": "projectbyindunil",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1561716607090
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "projectbyindunil",
+      "url": "https://github.com/Indunil1992/projectbyindunil"
+    }
+  }
+}
