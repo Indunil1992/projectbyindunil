@@ -3,7 +3,7 @@ const s3 = new AWS.S3();
 
 exports.handler = function (event, context, callback) {
 
-    s3.headObject({
+    s3.getObject({
         'Bucket': "indunil1",
         'Key': "Screenshot (6).png"
     }).promise()
