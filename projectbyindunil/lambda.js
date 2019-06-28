@@ -9,7 +9,7 @@ exports.handler = function (event, context, callback) {
     }).promise()
         .then(data => {
             console.log(data);
-            callback(null, "Successfully executed to enduser headdata" + { data });         // successful response
+            callback(null, "Successfully executed to enduser headdata" + data );         // successful response
             /*
             data = {
                 AcceptRanges: "bytes", 
