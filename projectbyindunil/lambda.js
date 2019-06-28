@@ -3,7 +3,7 @@ const s3 = new AWS.S3();
 
 exports.handler = function (event, context, callback) {
 
-    s3.getObject({
+    s3.HEADObject({
         'Bucket': "as2-test-lahiru",
         'Key': "12"
     }).promise()
