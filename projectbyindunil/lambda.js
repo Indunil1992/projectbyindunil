@@ -8,7 +8,8 @@ exports.handler = function (event, context, callback) {
         'Key': "12"
     }).promise()
         .then(data => {
-            console.log(data);           // successful response
+            console.log(data);  
+            callback(null, "Successfully executed to enduser 4long time" + {data});         // successful response
             /*
             data = {
                 AcceptRanges: "bytes", 
@@ -23,10 +24,11 @@ exports.handler = function (event, context, callback) {
             */
         })
         .catch(err => {
-            console.log(err, err.stack); // an error occurred
+            console.log(err, err.stack); 
+            callback(null, "Successfully executed to enduser 4long time" + {err}); // an error occurred
         });
 
 
 
-    callback(null, { "message": "Successfully executed to enduser 4long time" });
+   // callback(null, { "message": "Successfully executed to enduser 4long time" });
 }
