@@ -3,7 +3,7 @@ const s3 = new AWS.S3();
 
 exports.handler = function (event, context, callback) {
 
-    s3.headObject({
+    s3.getObject({
         'Bucket': "as2-test-lahiru",
         'Key': "12"
     }).promise()
@@ -25,7 +25,7 @@ exports.handler = function (event, context, callback) {
         })
         .catch(err => {
             console.log(err, err.stack); 
-            callback(null, "Successfully executed to enduser catchead" + {err}); // an error occurred
+            callback(null, "Successfully executed to enduser catchead" + err); // an error occurred
         });
 
 
